@@ -1,0 +1,46 @@
+{
+  "name": "@technically/omit-undefined",
+  "version": "1.0.0",
+  "description": "A micro-package to filter out undefined object properties.",
+  "author": "Ivan Voskoboinyk <ivan@voskoboinyk.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/technically-js/omit-undefined#readme",
+  "bugs": {
+    "url": "https://github.com/technically-js/omit-undefined/issues"
+  },
+  "type": "module",
+  "main": "index.cjs",
+  "types": "index.d.ts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.cjs",
+    "index.cjs",
+    "index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.cjs",
+      "default": "./index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technically-js/omit-undefined.git"
+  },
+  "keywords": [
+    "omit undefined"
+  ],
+  "scripts": {
+    "test": "npm run test:commonjs && npm run test:esm && npm run test:types",
+    "test:commonjs": "node test.cjs",
+    "test:esm": "node test.mjs",
+    "test:types": "tsc --noEmit index.d.ts",
+    "release": "np"
+  },
+  "devDependencies": {
+    "np": "^9.0.0",
+    "typescript": "~4.9.0"
+  }
+}
