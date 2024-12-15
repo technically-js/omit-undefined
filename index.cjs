@@ -1,15 +1,11 @@
 function omitUndefined(value) {
     return Object.fromEntries(
-        Object.keys(value)
-            .filter(function (key) {
-                return typeof value[key] !== 'undefined';
-            })
-            .map(function (key) {
-                return [key, value[key]];
-            }),
+        Object.entries(value).filter(function(entry) {
+            return typeof entry[1] !== 'undefined';
+        }),
     );
 }
 
 module.exports = {
     omitUndefined,
-}
+};
