@@ -1,6 +1,6 @@
 {
   "name": "@technically/omit-undefined",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A micro-package to filter out undefined object properties.",
   "author": "Ivan Voskoboinyk <ivan@voskoboinyk.com>",
   "license": "MIT",
