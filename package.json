@@ -14,7 +14,7 @@
   "files": [
     "LICENSE",
     "README.md",
-    "index.cjs",
+    "index.js",
     "index.cjs",
     "index.d.ts"
   ],
